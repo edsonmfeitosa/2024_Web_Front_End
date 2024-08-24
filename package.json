@@ -1,0 +1,18 @@
+{
+  "name": "2024_web_front_end",
+  "version": "1.0.0",
+  "description": "Aulas práticas da disciplina de Desenvolvimento Web Front-End ministrada na Facens no 2º Semestre de 2024",
+  "main": "index.js",
+  "scripts": {
+    "start" : "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
