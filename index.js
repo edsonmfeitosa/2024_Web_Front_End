@@ -1,79 +1,70 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 
-//requisições usando o use possuem regras de hierarquia
-app.use('/alunos', (req, res, next) => {
-    //res.send('agora eu mudei o caminho')
-    console.log('executou o /alunos');
-    next();
+app.use(bodyParser.json());
+
+//simulando um banco de dados
+let alunos = [
+    {id: 1, nome: 'Edson', idade: 23},
+    {id: 2, nome: 'Maria', idade: 25},
+    {id: 3, nome: 'João', idade: 21}
+]
+
+//retornando todos os alunos - GET
+app.get('/alunos', (req, res) => {
+    console.log('GET /alunos');
+    res.json(alunos);
 })
 
-//exemplo de requisições HTTP
-app.get('/exemploGet', (req, res) => {
-    res.send('Exemplo de GET');
+//retornando um aluno específico - GET
+app.get('/alunos/:id', (req, res) => {
+    console.log('GET /alunos/:id');
+    let id = req.params.id;
+    let aluno = alunos.find(aluno => aluno.id == id);
+    if(aluno){
+        res.json(aluno);
+    }else{
+        res.status(404).send('Aluno não encontrado');
+    }
 })
 
-app.post('/exemploPost', (req, res) => {
-    res.send('Exemplo de POST');
+//inserindo um aluno - POST
+app.post('/alunos', (req, res) => {
+    console.log('POST /alunos');
+    let aluno = req.body;
+    aluno.id = alunos.length + 1;
+    alunos.push(aluno);
+    res.status(201).json(aluno);
 })
 
-//ALL aceita todos os tipos de requisições
-app.all('/exemploAll', (req, res) => {
-    res.send('Exemplo de ALL');
+//atualizando um aluno - PUT    
+app.put('/alunos/:id', (req, res) => {
+    console.log('PUT /alunos/:id');
+    let id = req.params.id;
+    let aluno = req.body;
+    let index = alunos.findIndex(aluno => aluno.id == id);
+    if(index >= 0){
+        alunos[index] = aluno;
+        res.json(aluno);
+    }else{
+        res.status(404).send('Aluno não encontrado');
+    }
 })
 
-//retornando um json para o front-end
-app.get('/exemploJson', (req, res) => {
-    res.json(
-        {
-            nome: 'Edson', 
-            idade: 23,
-            endereco: {
-                rua: 'Rua 01',
-                numero: 123,
-                bairro: 'Bairro 01'
-            }
-        }
-    );
+//deletando um aluno - DELETE
+app.delete('/alunos/:id', (req, res) => {
+    console.log('DELETE /alunos/:id');
+    let id = req.params.id;
+    let index = alunos.findIndex(aluno => aluno.id == id);
+    if(index >= 0){
+        alunos.splice(index, 1);
+        res.status(204).send('Aluno excluído com sucesso');
+    }else{
+        res.status(404).send('Aluno não encontrado');
+    }
 })
-
-//usando middleware
-const lista01 = require('./Atividades/lista01');
-
-app.get('/ola', (req, res) => {
-    res.send(lista01.ola());
-})
-
-app.get('/ex01', (req, res) => {
-    res.send(lista01.exercicio01('Edson'));
-})
-
-//passagem de parâmetro via URL
-app.get('/ex02/:nome', (req, res) => {
-    let nome = req.params.nome;
-    res.send(lista01.exercicio01(nome));
-    })
-
-app.get('/divisao/:numero1/:numero2', (req, res) => {
-    let numero1 = req.params.numero1;
-    let numero2 = req.params.numero2;
-    res.send(lista01.divisao(numero1, numero2).toString());
-})
-
-app.get('/divisaoQuery', (req, res) => {
-    let numero1 = req.query.numero1;
-    let numero2 = req.query.numero2;
-    res.send(lista01.divisao(numero1, numero2).toString());
-})
-
-// app.use((req, res) => {
-//     res.send('<h1>Aula 02 de Node.js</h1></br></br></br><p>teste</p>');
-//     console.log('calma pessoal!');
-// })
-
-
-
 
 app.listen(3000, () => {
-    console.log('Server está executando na porta 3000');
-});
+    console.log('Servidor rodando na porta 3000');
+})
