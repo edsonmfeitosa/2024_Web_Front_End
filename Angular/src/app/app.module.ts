@@ -10,7 +10,7 @@ import { RodapeComponent } from './Aula01/rodape/rodape.component';
 import { PaiComponent } from './Aula01/pai/pai.component';
 import { Filho1Component } from './Aula01/pai/filho1/filho1.component';
 import { Filho2Component } from './Aula01/pai/filho2/filho2.component';
-
+import { Aula02Module } from './aula02/aula02.module';
 
 
 
@@ -28,7 +28,8 @@ import { Filho2Component } from './Aula01/pai/filho2/filho2.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    Aula02Module,
   ],
   providers: [
     provideClientHydration()
