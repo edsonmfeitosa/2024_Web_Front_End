@@ -11,6 +11,9 @@ import { PaiComponent } from './Aula01/pai/pai.component';
 import { Filho1Component } from './Aula01/pai/filho1/filho1.component';
 import { Filho2Component } from './Aula01/pai/filho2/filho2.component';
 import { Aula02Module } from './aula02/aula02.module';
+import { LoginComponent } from './lista01/login/login.component';
+import { PrincipalComponent } from './lista01/principal/principal.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -23,13 +26,16 @@ import { Aula02Module } from './aula02/aula02.module';
     RodapeComponent,
     PaiComponent,
     Filho1Component,
-    Filho2Component
+    Filho2Component,
+    LoginComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     Aula02Module,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
