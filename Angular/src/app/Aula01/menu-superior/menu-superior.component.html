@@ -62,7 +62,21 @@
 						</div>
 					</div>
 				</li>
-				
+				<li class="nav-item">
+					<div class="row">
+						<div class="col">
+							<div ngbDropdown class="d-inline-block">
+								<button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+									Aula 04
+								</button>
+								<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+									<button ngbDropdownItem [routerLink]="'diretivas'">Diretivas Estruturais</button>
+									<button ngbDropdownItem [routerLink]="'clientes'">Clientes</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>

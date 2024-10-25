@@ -14,6 +14,10 @@ import { Aula02Module } from './aula02/aula02.module';
 import { LoginComponent } from './lista01/login/login.component';
 import { PrincipalComponent } from './lista01/principal/principal.component';
 import { FormsModule } from '@angular/forms';
+import { DiretivasEstruturaisComponent } from './aula04/diretivas-estruturais/diretivas-estruturais.component';
+import { ClientesComponent } from './aula04/clientes/clientes.component';
+import { DiretivaNgifComponent } from './aula04/diretiva-ngif/diretiva-ngif.component';
+import { DiretivaNgforComponent } from './aula04/diretiva-ngfor/diretiva-ngfor.component';
 
 
 
@@ -28,7 +32,11 @@ import { FormsModule } from '@angular/forms';
     Filho1Component,
     Filho2Component,
     LoginComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    DiretivasEstruturaisComponent,
+    ClientesComponent,
+    DiretivaNgifComponent,
+    DiretivaNgforComponent
   ],
   imports: [
     BrowserModule,

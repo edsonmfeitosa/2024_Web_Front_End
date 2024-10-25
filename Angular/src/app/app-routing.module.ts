@@ -11,6 +11,8 @@ import { AulaAtributeBindingComponent } from './aula02/aula-atribute-binding/aul
 import { TwoWayComponent } from './aula02/two-way/two-way.component';
 import { LoginComponent } from './lista01/login/login.component';
 import { PrincipalComponent } from './lista01/principal/principal.component';
+import { DiretivasEstruturaisComponent } from './aula04/diretivas-estruturais/diretivas-estruturais.component';
+import { ClientesComponent } from './aula04/clientes/clientes.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -38,6 +40,8 @@ const routes: Routes = [
       { path: 'evento', component: AulaEventBindingComponent },
       { path: 'atributo', component: AulaAtributeBindingComponent },
       { path: 'two', component: TwoWayComponent },
+      { path: 'diretivas', component: DiretivasEstruturaisComponent },
+      {path: 'clientes', component: ClientesComponent},
     ],
   },
 ];
