@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ClientesService } from '../clientes.service';
 
 @Component({
   selector: 'app-diretiva-ngif',
@@ -9,6 +10,11 @@ export class DiretivaNgifComponent {
   mostraExemplo1: boolean = false;
   mostraExemplo2: boolean = false;
   mostraExemplo3: boolean = false;
+  global:string = '';
+
+  constructor(private serv : ClientesService) {
+      this.global = serv.varGlobal;
+   }
 
   exemplo1() {
     this.mostraExemplo1 = !this.mostraExemplo1;
@@ -18,6 +24,9 @@ export class DiretivaNgifComponent {
   }
   exemplo3() {
     this.mostraExemplo3 = !this.mostraExemplo3;
+  }
+  atualizar(){
+    this.serv.varGlobal = this.global;
   }
 
 }

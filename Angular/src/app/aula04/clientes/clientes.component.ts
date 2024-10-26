@@ -7,9 +7,11 @@ import { ClientesService } from '../clientes.service';
   styleUrl: './clientes.component.scss',
 })
 export class ClientesComponent {
+  clientes: any = [];
   constructor(private serv: ClientesService) {
     this.serv.getClientes().then((data) => {
       console.log(data);
+      this.clientes = data;
     });
   }
 }

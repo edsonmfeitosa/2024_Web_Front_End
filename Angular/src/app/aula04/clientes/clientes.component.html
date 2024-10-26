@@ -1,1 +1,16 @@
-<p>clientes works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Cidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cli of clientes">
+        <th scope="row">{{cli.nome}}</th>
+        <td>{{cli.email}}</td>
+        <td>{{cli.cidade}}</td>
+      </tr>
+    </tbody>
+  </table>

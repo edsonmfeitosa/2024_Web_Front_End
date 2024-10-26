@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ClientesService } from '../clientes.service';
 
 @Component({
   selector: 'app-diretiva-ngfor',
@@ -12,4 +13,9 @@ export class DiretivaNgforComponent {
     { nome: "Maria", idade: 25, ativo: false },
     { nome: "João", idade: 40, ativo: true }
   ];
+  global:string = '';
+  constructor(private serv : ClientesService) {
+      this.global = serv.varGlobal;
+
+  }
 }

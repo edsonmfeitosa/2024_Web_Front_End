@@ -26,3 +26,7 @@
   <div style="background-color: purple">Exemplo 3</div></ng-template
 >
 <button (click)="exemplo3()">Habilitar</button>
+
+<h3>Variável global</h3>
+<p>Valor da variável: <input type="text" name="x" id="x" [(ngModel)]="global"></p>
+<p><button type="button" (click)="atualizar()">Atualizar a variável global</button></p>
