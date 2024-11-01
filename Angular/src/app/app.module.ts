@@ -13,11 +13,12 @@ import { Filho2Component } from './Aula01/pai/filho2/filho2.component';
 import { Aula02Module } from './aula02/aula02.module';
 import { LoginComponent } from './lista01/login/login.component';
 import { PrincipalComponent } from './lista01/principal/principal.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DiretivasEstruturaisComponent } from './aula04/diretivas-estruturais/diretivas-estruturais.component';
 import { ClientesComponent } from './aula04/clientes/clientes.component';
 import { DiretivaNgifComponent } from './aula04/diretiva-ngif/diretiva-ngif.component';
 import { DiretivaNgforComponent } from './aula04/diretiva-ngfor/diretiva-ngfor.component';
+import { CadClienteComponent } from './aula05/cad-cliente/cad-cliente.component';
 
 
 
@@ -36,14 +37,16 @@ import { DiretivaNgforComponent } from './aula04/diretiva-ngfor/diretiva-ngfor.c
     DiretivasEstruturaisComponent,
     ClientesComponent,
     DiretivaNgifComponent,
-    DiretivaNgforComponent
+    DiretivaNgforComponent,
+    CadClienteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     Aula02Module,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()
