@@ -20,4 +20,18 @@ export class ClientesService {
       body: JSON.stringify(cliente)
     }).then(res => res.json());
   }
+  excluirCliente(id: number) {
+    return fetch(this.link + '/' + id, {
+      method: 'DELETE'
+    }).then(res => res.json());
+  }
+  alterarCliente(cliente: any) {
+    return fetch(this.link + '/' + cliente.id, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(cliente)
+    }).then(res => res.json());
+  }
 }

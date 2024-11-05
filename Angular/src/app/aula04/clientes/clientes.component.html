@@ -15,13 +15,21 @@
       style="margin-top: 30px"
       (click)="pesquisar()"
     >
-      Pesquisar
+      <i class="bi bi-search"></i> Pesquisar
     </button>
   </div>
 </div>
 <div class="row">
   <div class="col-12 d-flex justify-content-end">
-    <button type="button" class="btn btn-primary" (click)="open()">Novo</button>
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="open()"
+      ngbPopover="Novo Cliente"
+      triggers="mouseenter:mouseleave"
+    >
+      <i class="bi bi-plus-circle"></i>
+    </button>
   </div>
   <div class="col-12">
     <hr />
@@ -41,7 +49,28 @@
       <th scope="row">{{ cli.nome }}</th>
       <td>{{ cli.email }}</td>
       <td>{{ cli.cidade }}</td>
-      <td><button type="button" class="btn btn-primary" (click)="open(cli)">Atualizar</button></td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="open(cli)"
+          ngbPopover="Atualizar Cliente"
+          triggers="mouseenter:mouseleave"
+        >
+          <i class="bi bi-arrow-clockwise"></i>
+        </button>
+      </td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="exclui(cli)"
+          ngbPopover="Excluir Cliente"
+          triggers="mouseenter:mouseleave"
+        >
+          <i class="bi bi-trash3-fill"></i>
+        </button>
+      </td>
     </tr>
   </tbody>
 </table>
