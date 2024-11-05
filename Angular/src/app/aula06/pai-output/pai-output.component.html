@@ -1,0 +1,6 @@
+<p>Mensagem do filho: {{ mensagemDoFilho }}</p>
+
+<div style="background-color: yellowgreen; border: solid 2px black;">
+	<app-filho-input [mensagem]="mensagemParaFilho"
+    (mensagemParaPai)="receberMensagem($event)"></app-filho-input>
+</div>

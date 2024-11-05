@@ -19,6 +19,8 @@ import { ClientesComponent } from './aula04/clientes/clientes.component';
 import { DiretivaNgifComponent } from './aula04/diretiva-ngif/diretiva-ngif.component';
 import { DiretivaNgforComponent } from './aula04/diretiva-ngfor/diretiva-ngfor.component';
 import { CadClienteComponent } from './aula05/cad-cliente/cad-cliente.component';
+import { PaiOutputComponent } from './aula06/pai-output/pai-output.component';
+import { FilhoInputComponent } from './aula06/filho-input/filho-input.component';
 
 
 
@@ -38,7 +40,9 @@ import { CadClienteComponent } from './aula05/cad-cliente/cad-cliente.component'
     ClientesComponent,
     DiretivaNgifComponent,
     DiretivaNgforComponent,
-    CadClienteComponent
+    CadClienteComponent,
+    PaiOutputComponent,
+    FilhoInputComponent
   ],
   imports: [
     BrowserModule,

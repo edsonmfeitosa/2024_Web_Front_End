@@ -26,7 +26,7 @@ const routes: Routes = [
         path: 'pai',
         component: PaiComponent,
         children: [
-          { path: 'filho1', component: Filho1Component },
+          { path: 'filho1/:mensagem', component: Filho1Component },
           { path: 'filho2', component: Filho2Component },
         ],
       },

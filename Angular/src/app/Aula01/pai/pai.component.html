@@ -1,10 +1,9 @@
-<p>Shows the example of <code>NgbScrollSpyItem</code> usage to highlight items and handle scrolling</p>
-
+<h2>Rota pai e filho</h2>
 <div class="row">
 	<div class="col-4">
 		<div id="list-example" class="list-group">
 			
-			<a routerLink="filho1" class="list-group-item list-group-item-action" [ngbScrollSpyItem]="spy" fragment="items">
+			<a (click)="mensagemFilho()" class="list-group-item list-group-item-action" [ngbScrollSpyItem]="spy" fragment="items">
 				1 - Filho 1
 			</a>
             <a routerLink="filho2" class="list-group-item list-group-item-action" [ngbScrollSpyItem]="spy" fragment="items">
@@ -18,3 +17,8 @@
 		</div>
 	</div>
 </div>
+<h2>Passagem de parâmetros entre pai e filho</h2>
+<div style="background-color: aqua; border: solid 2px black;">
+	<app-pai-output></app-pai-output>
+</div>
+
