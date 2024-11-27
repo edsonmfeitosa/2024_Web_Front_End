@@ -1,0 +1,24 @@
+**********************************************************
+2 WARNING - 2013-08-02 19:37:24 (BRT)
+     ARQUIVO: G:\PROGRAMAS\USBWebserver v8.5\USBWebserver v8.5\8.5\root\lojaexemplo-php\includes\include.php(Linha 73)
+     MENSAGEM: 
+curl_error(): 8 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2013-08-02 19:39:50 (BRT)
+     ARQUIVO: G:\PROGRAMAS\USBWebserver v8.5\USBWebserver v8.5\8.5\root\lojaexemplo-php\includes\include.php(Linha 73)
+     MENSAGEM: 
+curl_error(): 8 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2013-08-02 19:40:31 (BRT)
+     ARQUIVO: G:\PROGRAMAS\USBWebserver v8.5\USBWebserver v8.5\8.5\root\lojaexemplo-php\includes\include.php(Linha 73)
+     MENSAGEM: 
+curl_error(): 8 is not a valid cURL handle resource
+
+**********************************************************
+2 WARNING - 2013-08-02 19:41:07 (BRT)
+     ARQUIVO: G:\PROGRAMAS\USBWebserver v8.5\USBWebserver v8.5\8.5\root\lojaexemplo-php\includes\include.php(Linha 73)
+     MENSAGEM: 
+curl_error(): 8 is not a valid cURL handle resource
+

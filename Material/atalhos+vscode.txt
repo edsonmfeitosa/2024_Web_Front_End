@@ -1,0 +1,22 @@
+- Shortcuts
+    - "Ctrl + c" (copiar um texto)
+    - "Ctrl + v" (colar o texto copiado)
+    - "Ctrl + s" (salvar um arquivo)
+    - "Ctrl + z" (voltar a alteração)
+    - "Ctrl + ;" (comentar uma linha)
+
+    - "Ctrl + '" (abrir o terminal)
+    - "Ctrl + b" (abrir e fechar o explorer)
+
+    - "Ctrl + f" (pesquisar um texto no arquivo)
+    - "Ctrl + p" (pesquisar um arquivo pelo nome)
+
+    - "Alt + Shift + Seta-Baixo" (duplicar linha)
+    - "Alt + Seta" (mover linha para cima ou para baixo)
+    - "Ctrl + d" (selecionar textos iguais)
+
+    - "Ctrl + ." (mostrar sugestões de quick fix)
+    - "Ctrl + Espaço" (mostrar propriedades de um objeto)
+    - "Ctrl + Shift + Espaço" (mostrar os parâmetros de uma função)
+
+    - "Alt + seta direita (volta de uma classe que veio)

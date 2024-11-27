@@ -1,0 +1,74 @@
+***********************************************
+2013-08-02 19:37:23:000000 (BRT)
+DO ARQUIVO: /lojaexemplo-php/pages/novoPedidoAguarde.php
+OPERAÇÃO: Transacao
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-transacao id="488215cb660c8e5d4908295e4e6c6129" versao="1.1.0">
+   <dados-ec>
+      <numero>1001734898</numero>
+      <chave>e84827130b9837473681c2787007da5914d6359947015a5cdb2b8843db0fa832</chave>
+   </dados-ec>
+   <dados-pedido>
+      <numero>1325195</numero>
+      <valor>10000</valor>
+      <moeda>986</moeda>
+      <data-hora>2013-08-02T19:37:21</data-hora>
+      <idioma>PT</idioma>
+   </dados-pedido>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+   <url-retorno>http://localhost:8080/lojaexemplo-php/pages/retorno.php</url-retorno>
+   <autorizar>3</autorizar>
+   <capturar>false</capturar>
+</requisicao-transacao>
+
+***********************************************
+2013-08-02 19:39:50:000000 (BRT)
+DO ARQUIVO: /lojaexemplo-php/pages/carrinhoCartaoPagamento.php
+OPERAÇÃO: Requisicao Tid
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-tid id="e0f6d2b1b775ed994ad62e2b4ecd6df9" versao ="1.1.0">
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+</requisicao-tid>
+
+***********************************************
+2013-08-02 19:40:31:000000 (BRT)
+DO ARQUIVO: /lojaexemplo-php/pages/executarTransacao.php
+OPERAÇÃO: Autorizacao Tid
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-autorizacao-tid id="157a894a77d082b083fc90b1856d7a8b" versao="1.1.0">
+  <tid>1</tid>
+  <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+</requisicao-autorizacao-tid>
+
+***********************************************
+2013-08-02 19:41:07:000000 (BRT)
+DO ARQUIVO: /lojaexemplo-php/pages/carrinhoCartaoPagamento.php
+OPERAÇÃO: Requisicao Tid
+ENVIO: <?xml version="1.0" encoding="ISO-8859-1" ?>
+<requisicao-tid id="18364a7e70e82fa8768ab622b3a74891" versao ="1.1.0">
+   <dados-ec>
+      <numero>1006993069</numero>
+      <chave>25fbb99741c739dd84d7b06ec78c9bac718838630f30b112d033ce2e621b34f3</chave>
+   </dados-ec>
+   <forma-pagamento>
+      <bandeira>visa</bandeira>
+      <produto>1</produto>
+      <parcelas>1</parcelas>
+   </forma-pagamento>
+</requisicao-tid>
+

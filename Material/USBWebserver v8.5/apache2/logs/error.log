@@ -1,0 +1,8 @@
+[Wed Nov 27 20:08:50 2024] [notice] Apache/2.2.21 (Win32) PHP/5.3.9 configured -- resuming normal operations
+[Wed Nov 27 20:08:50 2024] [notice] Server built: Sep 10 2011 11:34:11
+[Wed Nov 27 20:08:50 2024] [notice] Parent: Created child process 7052
+[Wed Nov 27 20:08:50 2024] [notice] Child 7052: Child process is running
+[Wed Nov 27 20:08:50 2024] [notice] Child 7052: Acquired the start mutex.
+[Wed Nov 27 20:08:50 2024] [notice] Child 7052: Starting 64 worker threads.
+[Wed Nov 27 20:08:50 2024] [notice] Child 7052: Starting thread to listen on port 8081.
+[Wed Nov 27 20:08:50 2024] [notice] Child 7052: Starting thread to listen on port 8081.

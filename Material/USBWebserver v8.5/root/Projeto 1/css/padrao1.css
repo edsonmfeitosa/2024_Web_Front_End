@@ -1,0 +1,53 @@
+/* ----------------------------------------------------
+ * TABLE OF CONTENTS
+ *
+ * |= GBAL : Estilos em Massa
+ * |= MAIN : Estilo das Seções do Site
+ *
+ * ----------------------------------------------------*/
+
+/*
+ * Estilos em massa |=GBAL
+ * ----------------------------------------------------*/
+*{
+  margin:0px;
+  padding:0px;
+}
+html, body{
+  font:normal 11px Trebuchet MS, serif;
+  height:100%;
+}
+div{
+  border:1px dashed #f00;
+}
+
+/*
+ * Estilo das Seções do Site |=MAIN
+ * ----------------------------------------------------*/
+#topo{
+  width:770px;
+  height:100px;
+}
+#coluna_esquerda, #meio, #coluna_direita{
+  float:left;
+  clear:none;
+}
+#coluna_esquerda, #coluna_direita{
+  width:150px;
+  height:300px;
+}
+#meio{
+  width:470px;
+  height:300px;
+}
+#rodape{
+  width:770px;
+  height:40px;
+}
+
+#central{
+  width:770px;
+  height:1px;
+  display:table;
+  margin:0px auto;
+}
