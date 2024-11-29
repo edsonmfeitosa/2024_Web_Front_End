@@ -1,0 +1,47 @@
+Fundamentos
+ - Desenvolvimento web
+	- HTTP
+	- Portas
+ - SPA (Single Page Application)
+Nodejs
+ - Conceitos iniciais
+ - Instalação
+ - middleware
+	- Express (para desenv. API)
+	- PM2 (criação de um server)
+	- nodemon (ambiente de testes
+	- BodyParser
+TypeScript
+ - Instalação
+ - Configuração do tsconfig.json
+ - Diferenças entre o javascript e typescript
+Angular
+ - Instalação
+	- Versão do nodejs com o angular/cli
+	- comandos ng
+ - Conceitos aplicados
+	- Componente
+		- Desenvolvimento das partes do sistema
+	- Módulos
+		- Para organização dos recursos desenvolvidos
+	- Binding
+		- Interpolação
+		- Property binding
+		- Event binding
+		- Atribute binding
+		- Two way data binding
+	- Diretivas
+		- NgIf, NgFor, ngModel etc
+	- Formulário
+		- Baseado em templates
+		- Reativo (focamos nesse tipo)
+	- Services
+		- Chamadas HTTP
+		- comunicação entre componentes
+	- Componentes (comunicação entre componentes)
+		- ActiveRoute
+		- decorator @Input e @Output
+
+Ferramentas de desenvolvimento
+ - VS Code
+ - Postman
